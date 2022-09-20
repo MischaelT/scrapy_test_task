@@ -7,6 +7,10 @@ import scrapy
 
 
 class FilmsScraperItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+
+    film_name = scrapy.Field()
+    film_name_eng = scrapy.Field()
+    film_rating = scrapy.Field()
+    film_country = scrapy.Field()
+    film_length = scrapy.Field()
+    film_description = scrapy.Field()
