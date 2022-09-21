@@ -1,6 +1,5 @@
 import pandas as pd
-from films_scraper.logger import logger
 
-df = pd.read_csv('items.csv')
+from films_scraper.settings import PATH_TO_DATA
 
-logger.info(df)
+df = pd.read_csv(PATH_TO_DATA)
